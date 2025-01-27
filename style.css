@@ -131,27 +131,38 @@ main{
     background-image: url(assets/bg.png);
 }
 .std-curriculum{
-    margin: 0 auto;
+    margin: 60px auto;
 }
 .std-curriculum-container{
-    margin-top: 60px;
-    margin: 0 auto;
+    /* margin-top: 60px; */
+    margin: 0px auto;
     
 }
 
 .std-curriculum-card-container{
-    max-width: 1160px;
-    max-height: 481.5px;
-    margin: 0 auto;
+    width: 1440px;
+    height: 879px;
+    /* margin: 0 auto; */
+    margin: 80px 140px;
+    border-radius: 18px;
     gap: 1.76rem;
 }
 .card{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
-    gap: 5px;
+    gap: 20px; */
+    width: 1440px;
+    height: 879px;
+    display: flex;  
+    gap: 28.29px;
+    /* margin: 80px 140px; */
+    border-radius: 18px; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     
 }
 
@@ -159,18 +170,19 @@ main{
 
     max-width: 367.8px;
     max-height: 476.78px;
-    border-radius: 18.86px;
+    border-radius: 18.86px; 
     border: 0.94px solid rgb(222, 245, 255);
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
     padding: 4rem ;
+    
 }
 
 .card-2{
 
     max-width: 367.8px;
     max-height: 476.78px;
-    border-radius: 18.86px;
+    border-radius: 18.86px; 
     border: 0.94px solid rgb(255, 244, 220);;
     box-shadow:  inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
@@ -181,7 +193,7 @@ main{
 
     max-width: 367.8px;
     max-height: 476.78px;
-    border-radius: 18.86px;
+    border-radius: 18.86px; 
     border: 0.94px solid rgb(242, 232, 255);
     box-shadow:  inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
@@ -231,11 +243,14 @@ main{
 
 }
 
-.arrow-btn{
+ .arrow-btn{
     margin-top: 80px;
+    margin-bottom: 60px;
     display: flex;
     gap: 10px;
     justify-content: center;
+    /* padding-top: 80px; */
+    padding-bottom: 60px;
 
 }
 .arrow-btn-left{
@@ -245,7 +260,8 @@ main{
     background-color: rgb(254, 163, 1);
     border-radius: 30px;
 
-}
+} 
+
 .hr-line{
     
     border: 1px dashed grey;
@@ -253,12 +269,13 @@ main{
 }
 
 /* Resposive  */
-@media screen and (max-width:576px) {
+@media screen and (max-width:390px) {
     section{
         width: 100%;
     }
     .nav-bar-pc{
         display: none;
+        width: 336px;
     }
     .nav-responsive{
         margin: 12px 16px;
@@ -272,22 +289,37 @@ main{
     }
     .hero{
         flex-direction: column-reverse;
-        width: 357px;
-        height: 725px;
+        width: 336.58px;
+        height: 413px;
         text-align: center;
-        margin-top: 400px;
+        margin-top: 550px;
     }
-    .std-curriculum{
+      .std-curriculum{
+        width: 390px;
         height: fit-content;
-        margin-top: 20px;
-        margin-bottom: 200px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
     .std-curriculum-card-container{
         width: 100%;
         height: auto;
+        margin-top: 460px;
+        align-items: center;
+        margin-left: 26.21px;
         flex-direction: column; 
-        /* grid-template-columns: 1fr; */
+         /* grid-template-columns: column;  */
+    }   
+     
+    .section-title{
+        width: 358px;
+        font-size: 26px;  
     }
+     .card{
+        flex-direction: column;
+        padding: 0;
+        margin:0px 16px;
+        width: 358px;
+    } 
     .hr-line{
         display: none;
     }
