@@ -148,12 +148,7 @@ main{
     gap: 1.76rem;
 }
 .card{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    gap: 20px; */
+    
     width: 1440px;
     height: 879px;
     display: flex;  
@@ -366,6 +361,111 @@ main{
     background-color: rgb(17, 17, 17);
 }
 
+.stories{
+    margin: 20px 140px;
+}
+.st-1,
+.st-2,
+.st-3,
+.st-4,
+.st-5{
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+.sg{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.coloms{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #01ACFD;
+    padding: 123px 228px 174px 140px;
+    color: #FFFFFF;
+}
+.break{
+    display: block;
+}
+.kids-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.item{
+    list-style: none;
+}
+.vl,.nav-line{
+    display: none;
+}
+
+/* Footer degine */
+.footer{
+    margin-top: 60px;
+    width: 100%;
+    height: 519px;
+    background-color: rgb(1, 172, 253);
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-content{
+    padding-top: 123px; 
+    margin: 0 auto;
+    max-width: 1070.91px;
+    max-height: 222px;
+}
+
+.footer-title{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 2.63rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+.footer-sub-title{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.nav-bar-links-footer{
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.nav-bar-links-footer>li{
+    list-style: none;
+
+}
+.nav-bar-items-footer>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.footer-nav-link-title{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.nav-social-link-title{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+}
+.primary-btn:hover{
+    background-color: darkgoldenrod;
+}
+
 /* Resposive  */
 @media screen and (max-width:390px) {
     section{
@@ -453,6 +553,8 @@ main{
         text-align: center;
         align-items: center;
         padding: 10px;
+        width: 358px;
+        height: 561.39px;
     }
     .story-card-01{
         display: none;
@@ -465,5 +567,20 @@ main{
     }
     .story-btn{
         margin-top: 160px;
+    }
+
+    .footer{
+        margin-top: 30px;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgb(1, 172, 253);
+        align-items:flex-start; 
+        justify-content: flex-start;
+        width: 390px;
+        height: 642px;
+    }
+
+   .nav-social-link-title{
+    margin: 0;
     }
 }
